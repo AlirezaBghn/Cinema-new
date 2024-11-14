@@ -29,8 +29,68 @@
             placeholder="Last Name"
             required
           />
-          <br /><br />
+          <br><br>
+          <label for="dilivery">How do you want to send it?</label>
+          <br />
+          <br />
+          <div class="radio-group">
+            <label>
+              <input
+                type="radio"
+                id="email"
+                name="delivery"
+                value="email"
+                checked
+              />Email</label
+            >
+            <label>
+              <input
+                type="radio"
+                id="mail"
+                name="delivery"
+                value="mail"
+              />Postal Mail
+            </label>
+          </div>
+          <!--How much-->
+          <br />
+          <label for="amount">How much is it for?</label>
+          <input type="number" id="amount" name="amount" min="100" required />
+ 
+ 
+          <!--Quantity-->
+          <br />
+          <br />
+          <label for="quantity">Quantity</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="100"
+            value="1"
+            required
+          />
+          <!--Button buy-->
+          <br />
+          <br />
+          <button type="submit">Buy now</button>
         </form>
+      </div>
+      <!--Img of cards-->
+ 
+ 
+      <div class="card-images">
+        <img
+          src="../Cinema-new/MASTER-1.png"
+          alt="Image of gift card 1"
+          class="card-img"
+        />
+        <img
+          src="../Cinema-new/MASTER-1 (1).png"
+          alt="Image of gift card 2"
+          class="card-img"
+        /> </form>
       </div>
       <header></header>
       <main></main>
