@@ -1,19 +1,40 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-        </header>
-        <main></main>
-        <footer></footer>
+      <!--Card Form-->
+      <div class="form-container">
+        <h2>Gift Card</h2>
+        <p>Gift a story on the big screen</p>
+        <br /><br />
+        <form action="submit-form" method="post">
+          <label for="name">A movie lover:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Last Name"
+            required
+          />
+          <br /><br />
+        </form>
+      </div>
+      <header></header>
+      <main></main>
+      <footer></footer>
     </div>
-</body>
-
+  </body>
 </html>
