@@ -13,3 +13,40 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.form-container {
+  width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+.card-images {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
