@@ -10,6 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #121111;
+  flex-direction: column;
 }
 h2 {
   color: #333;
@@ -28,6 +29,9 @@ h2 {
 .signup_setup {
   display: flex;
   flex-direction: column;
+}
+.home-button {
+  color: #19dbde;
 }
 label {
   margin-top: 1rem;
@@ -71,4 +75,7 @@ p {
 }
 .signin-link:hover {
   text-decoration: underline;
+}
+.navigation_list {
+  display: ;
 }
