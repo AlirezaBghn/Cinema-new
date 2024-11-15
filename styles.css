@@ -186,3 +186,60 @@ label {
   transform: rotateX(176deg);
   transition: all 0.2s;
 }
+
+footer {
+  background-color: #333; /* Dark background for cozy cinema feel */
+  color: #f5f5f5; /* Light text for readability */
+  padding: 2rem 0; /* Vertical padding for breathing room */
+  text-align: center;
+  font-size: 0.9rem; /* Slightly smaller font size for footer */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-bottom: 1rem; /* Space between copyright text and nav */
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Spacing between footer links */
+  padding: 0;
+  margin-bottom: 1rem; /* Space between nav and social media */
+}
+
+.footer-nav li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav li a:hover {
+  color: #d4af37; /* Gold color on hover to match cozy feel */
+}
+
+.social-media i {
+  font-size: 24px;
+  color: #f5f5f5;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media i:hover {
+  color: #d4af37; /* Gold color on hover */
+}
+
+@media (max-width: 600px) {
+  .footer-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .social-media {
+    gap: 0.5rem;
+  }
+}
