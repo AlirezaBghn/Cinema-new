@@ -13,6 +13,110 @@
   margin: 0 auto;
   padding: 0 20px;
 }
+
+body {
+  background-color: black;
+}
+.container_header {
+  display: flex;
+  background-image: linear-gradient(to right, #8d8fd3, #1bffff);
+  width: 100%;
+  padding: 20px;
+  border-radius: px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  gap: 2rem;
+}
+.search-engine {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search-engine input[type="text"] {
+  padding: 0.5em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-engine button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0073e6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-engine button:hover {
+  background-color: #005bb5;
+}
+
+/* Hide label visually but keep it accessible for screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.container_header {
+  position: relative;
+}
+
+.sign-in-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.sign-in-button:hover {
+  background-color: #0056b3;
+}
+.offer_image {
+  width: 60%;
+}
+.marquee {
+  overflow: hidden;
+  width: 100%; /* Width of the marquee container */
+  white-space: nowrap; /* Prevents line breaks */
+}
+
+/* Image styling */
+.marquee img {
+  display: inline-block;
+  width: 60%; /* Adjust based on image size or set a specific width */
+  height: 400px; /* Set the desired height */
+  animation: marquee 10s linear infinite; /* Marquee animation */
+}
+
+/* Keyframes for the marquee animation */
+@keyframes marquee {
+  from {
+    transform: translateX(100%); /* Start from the right */
+  }
+  to {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
 .container-cards {
   display: flex;
   justify-content: space-between;

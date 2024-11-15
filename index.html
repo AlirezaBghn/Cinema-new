@@ -6,48 +6,95 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-<body>
-    <div class="container">
-        <header>
-        </header>
-        <main>
-            <!-- gallery -->
-            <section class="gallery">
-                <div class="cards-container">
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/Deadpool.jpg);"></div>
-                    </a>
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/gladiator\ 2.webp);">
-                        </div>
-                    </a>
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/Planet-Ape.jpg);">
-                        </div>
-                    </a>
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/Smile-2\ .jpg);">
-                        </div>
-                    </a>
+  <body>
+      <header>
+        <div class="container_header">
+          <div class="flex">
+            <h1>The Film Loft</h1>
+            <form
+              class="search-engine"
+              action="search_results.html"
+              method="get"
+              aria-label="Search form"
+            >
+              <label for="search-query" class="visually-hidden"
+                >Search Query</label
+              >
+              <input
+                type="text"
+                id="search-query"
+                name="query"
+                placeholder="Enter your search query"
+                required
+                aria-required="true"
+                minlength="2"
+              />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <a href="signin.html" class="sign-in-button">Sign In</a>
+        </div>
+      </header>
+      <div class="marquee">
+        <img class="offer_image" src="./219.jpg" alt="Black sale" />
+      </div>
+      <main>
+        <!-- gallery -->
+        <section class="gallery">
+          <div class="cards-container">
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/Deadpool.jpg)"
+              ></div>
+            </a>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/gladiator\ 2.webp)"
+              ></div>
+            </a>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/Planet-Ape.jpg)"
+              ></div>
+            </a>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/Smile-2\ .jpg)"
+              ></div>
+            </a>
 
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/Garfield\ .webp);">
-                        </div>
-                    </a>
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/Panda.jpg);"></div>
-                    </a>
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover" style="background-image: url(img-gallery/They-See-You.jpg);">
-                        </div>
-                    </a>
-                    <a href="#" class="b-movie-card">
-                        <div class="b-movie-card__cover"
-                            style="background-image: url(img-gallery/a-Quiet-Place-Day-one.webp);">
-                        </div>
-                    </a>
-                </div>
-            </section>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/Garfield\ .webp)"
+              ></div>
+            </a>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/Panda.jpg)"
+              ></div>
+            </a>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="background-image: url(img-gallery/They-See-You.jpg)"
+              ></div>
+            </a>
+            <a href="#" class="b-movie-card">
+              <div
+                class="b-movie-card__cover"
+                style="
+                  background-image: url(img-gallery/a-Quiet-Place-Day-one.webp);
+                "
+              ></div>
+            </a>
+          </div>
+        </section>
             <!--form-->
             <div class="container-cards">
               <!--Card Form-->
@@ -136,9 +183,8 @@
                 /> </form>
               </div>
               </div>
-        </main>
-        <footer>
-        </footer>
+      </main>
+      <footer></footer>
     </div>
   </body>
 </html>
